@@ -1,0 +1,51 @@
+
+<h4 class="h4">Student Adddmission Form</h4><br>
+
+<form #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+    <div>
+        <!-- <label for="enroll_number">Enroll Number</label> -->
+        <input type="text" name="enroll_number" ngModel placeholder="Enter Enroll Number"><br><br>
+
+
+        <!-- <label for="first_name">First Name</label> -->
+        <input type="text" name="first_name" ngModel placeholder="Enter First Name"><br><br>
+
+
+        <!-- <label for="last_name">Last Name</label> -->
+        <input type="text" name="last_name" ngModel placeholder="Last Name"><br><br>
+
+
+        <!-- <label for="dob">Date of Birth</label> -->
+        <input type="text" name="dob" ngModel placeholder="Date of Birth"><br><br>
+
+
+        <!-- <label for="fathers_name">Fathers Name</label> -->
+        <input type="text" name="fathers_name" ngModel placeholder="Enter Fathers Name"><br><br>
+
+
+        <!-- <label for="mothers_name">Mothers Name</label> -->
+        <input type="text" name="mothers_name" ngModel placeholder="Enter Mothers Name"><br><br>
+
+
+        <!-- <label for="address">Address</label> -->
+        <input type="text" name="address" ngModel placeholder="Enter Address"><br><br>
+
+
+
+        <!-- <label for="gender">Contact Phone</label>
+        <input type="text" name="gender" ngModel><br><br> -->
+
+
+         <!-- <label for="contact_phone">Gender</label> -->
+        <input type="text" name="contact_phone" ngModel placeholder="Gender"><br><br> 
+
+        <!-- <label for="session_id">Session Id</label> -->
+        <input type="text" name="session_id" ngModel placeholder="Enter Session Id"><br><br>
+
+
+        <!-- <label for="addmission_grade">Addmission Grade</label> -->
+        <input type="text" name="addmission_grade" ngModel placeholder="Enter Addmission Grade"><br><br>
+
+    </div><br>
+    <button>Submit</button>
+</form>

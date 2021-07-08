@@ -1,0 +1,16 @@
+<form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+    <h1 class="h3 mb-3 fw-normal">Sign Up Here</h1>
+
+    <input type="text" ngModel name="username" class="form-control" placeholder="Enter Username"><br>
+
+    <input type="email" ngModel name="email" class="form-control" placeholder="Enter Email"><br>
+
+    <input type="password" ngModel name="password" class="form-control" placeholder="Enter Password"><br>
+
+
+    <input type="password" ngModel name="password" class="form-control" placeholder="Confirm Password"><br>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+
+</form>

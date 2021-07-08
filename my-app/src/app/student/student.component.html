@@ -1,0 +1,30 @@
+<h3>Student Component</h3><br>
+
+<input type="text" #input placeholder="Search by First Name"> <br><br>
+
+<button (click)="getStudent(input.value)" class="btn btn-primary">Search</button>
+
+<br><br>
+<table class="table" border="=1" *ngIf="searched">
+    <tr>
+        <td>Enrollment Number</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Fathers Name</td>
+        <td>Gender</td>
+        <td>Date of Birth</td>
+        <td>Addmission Class</td>
+        <td>Address</td>
+    </tr>
+    
+    <tr *ngFor="let i of student">
+        <td>{{i.enroll_number}}</td>
+        <td>{{i.first_name}}</td>
+        <td>{{i.last_name}}</td>
+        <td>{{i.fathers_name}}</td>
+        <td>{{i.gender}}</td>
+        <td>{{i.dob}}</td>
+        <td>{{i.addmission_grade}}</td>
+        <td>{{i.address}}</td>
+    </tr>
+</table>
